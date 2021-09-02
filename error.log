@@ -1,0 +1,57 @@
+----------
+
+Thu Sep 02 2021 16:36:31 GMT-0500 (Central Daylight Time)
+
+Traceback (most recent call last):
+  File "BS_NCAAexport.py", line 13, in <module>
+    shutil.move(f,baseTarget+'\\templates')
+  File "C:\Users\mulle\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path 'C:\Users\mulle\OneDrive\Documents\GitHub\NCAApicks\templates\index.html' already exists
+
+
+----------
+
+Thu Sep 02 2021 16:39:41 GMT-0500 (Central Daylight Time)
+
+Traceback (most recent call last):
+  File "BS_NCAAexport.py", line 13, in <module>
+    os.remove(baseTarget+'\\templates'+f)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\mulle\\OneDrive\\Documents\\GitHub\\NCAApicks\\templatesindex.html'
+
+
+----------
+
+Thu Sep 02 2021 16:40:56 GMT-0500 (Central Daylight Time)
+
+Traceback (most recent call last):
+  File "C:\Users\mulle\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 788, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'index.html' -> 'C:\\Users\\mulle\\OneDrive\\Documents\\GitHub\\NCAApicks\\templates\\index.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "BS_NCAAexport.py", line 14, in <module>
+    shutil.move(f,baseTarget+'\\templates')
+  File "C:\Users\mulle\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 802, in move
+    copy_function(src, real_dst)
+  File "C:\Users\mulle\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 432, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\mulle\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: 'index.html'
+
+
+----------
+
+Thu Sep 02 2021 16:43:09 GMT-0500 (Central Daylight Time)
+
+Traceback (most recent call last):
+  File "BS_NCAAexport.py", line 14, in <module>
+    shutil.move(f,baseTarget+'\\templates')
+  File "C:\Users\mulle\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path 'C:\Users\mulle\OneDrive\Documents\GitHub\NCAApicks\templates\index.html' already exists
+
+
